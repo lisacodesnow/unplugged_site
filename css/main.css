@@ -93,6 +93,8 @@ textarea {
 	
 }
 
+
+
 /*-----------------Base Header - Footer Styles for all the pages ------------------*/
 
 header,
@@ -140,7 +142,6 @@ header nav{
 	width: 60%;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
 }
 
 
@@ -164,11 +165,26 @@ footer .content-wrapper{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 55%;
+	flex-flow: column wrap;
+	width: 100%;
 	margin: 50px 0;
 	background-color: coral;
 	
 }
+
+footer .contact{
+	text-align: center;
+	background:  #CC3335;
+	
+}
+
+footer .social{
+	background: #916FE4;
+	margin: 60px 0px;
+	text-align: center;
+}
+
+
 
 /*---------------mobile homepage styles -----------*/
 
@@ -257,12 +273,35 @@ aside .content-wrapper{
 }
 
 
-/*---contact--?
-
-
+/*---contact--*/
 
 
 /*-----------FAQ page ------------*/
+
+
+.faq {
+	background-color: #527158;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.faq-content{
+	color: #ffffff;
+	width: 90%;
+}
+
+.faq p{
+	margin-bottom: 50px;
+}
+
+.faq h2{
+	color: #ffffff;
+	margin: 0px;
+	width:60%;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -355,6 +394,41 @@ aside .content-wrapper{
 
 @media only screen and (min-width: 768px){
 	/*tablet size*/
+	
+	.content-wrapper{
+		max-width: 640px;
+		margin: 100px 0px;
+	}
+	
+	
+	header{
+		justify-content: space-around;
+		padding: 10px 0px 0px 0px;
+	}
+	
+	header .header-divider{
+		display: none;
+	}
+	
+	header .content-wrapper{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	
+	header a{
+		width: 30%;
+	}
+	
+	header nav{
+		width: 25%;
+		
+	}
+	
+	header nav ul {
+		justify-content: space-between;
+	}
+	
 }
 
 	@media only screen and (min-width:1200px){
