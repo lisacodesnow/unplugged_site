@@ -219,6 +219,8 @@ aside .content-wrapper{
 .feautures{
 	background: #3DB1AC;
 	display: flex;
+	justify-content: center;
+	align-content: center;
 	flex-flow: row wrap;
 }
 
@@ -249,12 +251,12 @@ aside .content-wrapper{
 	background:#6472DC;
 }
 
-.reviews .team-building{
+.reviews article{
 	width: 90%;
 }
 
-.reviews h3{
-	width: 45%;
+.reviews h2{
+	width: 50%;
 }
 
 
@@ -274,6 +276,7 @@ aside .content-wrapper{
 
 
 /*---contact--*/
+
 
 
 /*-----------FAQ page ------------*/
@@ -396,13 +399,12 @@ aside .content-wrapper{
 	/*tablet size*/
 	
 	.content-wrapper{
-		max-width: 640px;
+		max-width: 650px;
 		margin: 100px 0px;
 	}
 	
 	
 	header{
-		justify-content: space-around;
 		padding: 10px 0px 0px 0px;
 	}
 	
@@ -418,6 +420,7 @@ aside .content-wrapper{
 	
 	header a{
 		width: 30%;
+		justify-content: flex-start;
 	}
 	
 	header nav{
@@ -429,11 +432,118 @@ aside .content-wrapper{
 		justify-content: space-between;
 	}
 	
+	
+	/*-------------aside----------------*/
+	
+	aside{
+		display: flex;
+	}
+	
+	aside .content-wrapper{
+		display: flex;
+		width: 100%;
+		margin: 50px 0px;
+	}
+	
+	aside .content-wrapper .signup-form,
+	aside .content-wrapper .signup-text{
+		
+		width: 50%;
+	}
+	
+	aside .content-wrapper .signup-text p{
+		width: 85%
+	}
+	
+	aside .content-wrapper .signup-form{
+		margin-left: 100px;
+	}
+	
+	/*-------------features-----------*/
+	
+	
+	.feautures h2{
+		width: 100%;
+		text-align: center;
+		font-size: 2em;
+	}
+	
+	
+	.feautures .feature-items{
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+	}
+	
+	
+	
+	.feautures article{
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+		width: 40%;
+	}
+	
+	.feautures .features-item-description{
+		width: 85%;
+		text-align: center;
+		
+		
 }
 
+	/*-------------review-------------*/
+
+
+
+.reviews article{
+		
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+	.reviews .team-building-text{
+		width: 49%;
+	}
+	
+	
+/*---------contact-----------*/	
+	
+	
+	.contact-section{
+		
+	}
+
+	/*--------------footer------------*/
+	
+	
+	
+footer .content-wrapper{
+	background-color: aqua;
+}
+
+footer .footer-content{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+}
+
+footer .copyright{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+}
+	
 	@media only screen and (min-width:1200px){
 		/* desktop size*/
+
+
+
+		
 }
+	
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
