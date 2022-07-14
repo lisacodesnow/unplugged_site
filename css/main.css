@@ -179,8 +179,7 @@ footer .contact{
 }
 
 footer .social{
-	background: #916FE4;
-	margin: 60px 0px;
+	background: #916FF4;
 	text-align: center;
 }
 
@@ -256,9 +255,12 @@ aside .content-wrapper{
 }
 
 .reviews h2{
-	width: 50%;
+	width: 100%;
 }
 
+.reviews img{
+	width: 100%
+}
 
 /*-----------About page------------*/
 
@@ -437,6 +439,16 @@ aside .content-wrapper{
 	}
 	
 	
+	footer .footer-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+		}
+	
+	footer .copyright{
+			margin-top: 30px;
+		}
+	
 	/*-------------aside----------------*/
 	
 	aside{
@@ -497,18 +509,29 @@ aside .content-wrapper{
 
 	/*-------------review-------------*/
 
-
-
-.reviews article{
+	.reviews .content-wrapper{
+		display: flex;
+		flex-flow: row wrap;
 		
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-}
-
-	.reviews .team-building-text{
-		width: 49%;
 	}
+		
+	.reviews article{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.reviews img{
+		
+		width: 50%;
+	}
+	.team-building-text{
+		width: 48%
+	}
+	
+	.team-building-text h3{
+		margin:0px;
+	}
+	
 
 /* ========================= ABOUT PAGE =================== */
 	
@@ -549,7 +572,8 @@ aside .content-wrapper{
 	when flex-flow is applied the h1 will go on its own line because 
 	it is its own box and takes up alot of space. Before I was seperating the 
 	h1 tags from the content wrapper because I didn't know how
-	to keep it seperate from the content but now I get it*/
+	to keep it seperate from the content but now I get it. And using space-between
+	or around will create columns*/
 	
 	/*======================FAQ PAGE ===================*/
 	
@@ -567,14 +591,9 @@ aside .content-wrapper{
 		align-items: center;
 	}
 	
-	.faq-content{
-		flex-basis: 46%;
-	}
 	.faq h1{
-		margin-bottom: 40px;
-	}
-	
-	
+		margin-bottom: 20px;
+	}		
 	
 	.faq-content{
 		flex-basis: 45%;
@@ -606,9 +625,134 @@ footer .copyright{
 	@media only screen and (min-width:1200px){
 		/* desktop size*/
 
-
-
+.content-wrapper{
+			max-width: 965px;
+			
+		}
+header .content-wrapper{
+			padding: 20px;
+		}
 		
+header img{
+			width: 80%
+		}
+		
+footer .footer-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+		}
+footer .copyright{
+			margin-top: 30px;
+		}
+/*======================HOMEPAGE===============*/
+		
+/*-------hero-----*/
+
+.hero-area h1{
+			width: 65%;
+		}
+
+/*---------aside------*/
+
+aside .content-wrapper{
+			display: flex;
+			justify-content: space-around;
+			
+		}		
+aside .content-wrapper	.signup-form{
+			display:flex;
+			align-items: center;
+			flex-flow: row wrap;
+			width: 30%;
+			
+		}
+aside .content-wrapper .signup-text{
+			width: 30%;
+		}
+		
+.signup-form input{
+			width: 80%
+		}
+		
+/*------feautures------*/
+		
+		.feautures article{
+			display: flex;
+			flex-basis: 33%;
+			justify-content: center;
+			align-items: center;
+		}	
+	
+		.feautures .content-wrapper{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			align-items: center;
+
+		}
+		
+		.feautures .feature-items{
+			width: 80%;
+			display: flex;
+			justify-content: space-around;
+		}
+		
+		.feautures h1{
+			width: 80%;
+		}
+		
+/*-----reviews------*/
+.reviews{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background:#6472DC;
+}
+
+.reviews article{
+	width: 90%;
+}
+
+.reviews h2{
+	width: 50%;
+}	
+
+.reviews img{
+		
+		width: 40%;
+	}
+.team-building-text{
+		width: 55%;
+	}
+	
+.team-building-text h3{
+		margin:0px;
+	}
+		
+/*=============================ABOUT PAGE==================*/
+
+
+		.contact-section .content-wrapper{
+			display: flex;
+			justify-content: space-between;
+		}		
+		
+		.contact-section h1{
+			width: 100%;
+		}
+		
+		.information{
+			width: 35%;
+		}
+		
+		.chat{
+			width: 35%;
+		}
+		
+/*======================FAQ PAGE=================*/
+		
+	
 }
 	
 /* ==========================================================================
