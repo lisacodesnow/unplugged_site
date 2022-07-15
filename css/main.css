@@ -93,6 +93,64 @@ textarea {
 	
 }
 
+/*------------GENERAL STYLES--------*/
+
+html{
+	
+	font-size: 16px;
+	color:#FFFFFF;
+	
+}
+
+body{
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	
+}
+
+ul, ol {
+	
+}
+
+a{
+	
+}
+
+h1{
+	font-size: 3em;
+}
+
+h2{ font-family: 'Poppins', sans-serif;
+	font-size: 1.875em;
+	
+}
+
+h3{ font-family: 'Poppins', sans-serif;
+	font-size: 1.875em
+	
+}
+
+h4{
+	
+}
+
+img{
+	
+}
+
+figure{
+	
+}
+
+address{
+	
+}
+
+.content-wrapper{
+	
+}
+
 
 
 /*-----------------Base Header - Footer Styles for all the pages ------------------*/
@@ -181,6 +239,10 @@ footer .contact{
 footer .social{
 	background: #916FF4;
 	text-align: center;
+}
+
+footer p{
+	font-size: 1.125em;
 }
 
 
@@ -310,6 +372,11 @@ aside .content-wrapper{
 	margin: 0px;
 	width:60%;
 }
+
+.faq-content h4{
+	font-size: 1.125em;
+}
+
 
 
 /* ==========================================================================
@@ -622,7 +689,7 @@ footer .copyright{
 }
 }
 	
-	@media only screen and (min-width:1200px){
+@media only screen and (min-width:1200px){
 		/* desktop size*/
 
 .content-wrapper{
@@ -645,6 +712,7 @@ footer .footer-content{
 footer .copyright{
 			margin-top: 30px;
 		}
+	
 /*======================HOMEPAGE===============*/
 		
 /*-------hero-----*/
@@ -747,11 +815,15 @@ aside .content-wrapper .signup-text{
 		}
 		
 		.chat{
-			width: 35%;
+			width: 45%;
 		}
 		
 /*======================FAQ PAGE=================*/
 		
+	.faq h1{
+		width:100%;
+	}	
+	
 	
 }
 	
