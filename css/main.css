@@ -338,8 +338,16 @@ input[type=button]{
 }
 .feautures p{
 	margin: 0px;
+	text-align: center;
+}
+.feautures i{
+	font-size: 3.75em;
+	margin-bottom: 40px;
 }
 .feautures article{
+	display:flex;
+	align-items: center;
+	flex-flow: column wrap;
 	width: 60%;
 	margin-bottom: 100px;
 }
@@ -850,6 +858,7 @@ aside .content-wrapper .signup-text{
 			width: 80%;
 			display: flex;
 			justify-content: space-around;
+			padding-top:40px;
 		}
 		
 
