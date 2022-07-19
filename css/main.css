@@ -385,7 +385,7 @@ input[type=button]{
 
 .map figure{
 	position: relative;
-	padding-bottom: 75%;
+	padding-bottom: 125%;
 	overflow: hidden;
 	height: 0px;
 	width: 100%;
@@ -529,6 +529,9 @@ input[type=button]{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+/*===================================TABLET 768PX==================*/
+
 
 @media only screen and (min-width: 768px){
 	/*tablet size*/
@@ -696,6 +699,17 @@ h3{
 		width:40%;
 	}
 	
+/*-------map-----------*/
+	
+	.map figure{
+	position: relative;
+	padding-bottom: 45%;
+	overflow: hidden;
+	height: 0px;
+	width: 100%;
+	
+}
+	
 	/*---------contact-----------*/	
 	
 	
@@ -763,7 +777,7 @@ footer .copyright{
 }
 }
 
-
+/*==================================SCREEN 1200PX=====================*/
 
 @media only screen and (min-width:1200px){
 		/* desktop size*/
@@ -887,6 +901,18 @@ aside .content-wrapper .signup-text{
 		.chat{
 			width: 45%;
 		}
+	
+	
+	/*-------map-----------*/
+	
+	.map figure{
+	position: relative;
+	padding-bottom: 40%;
+	overflow: hidden;
+	height: 0px;
+	width: 100%;
+	
+}
 		
 /*======================FAQ PAGE=================*/
 		
