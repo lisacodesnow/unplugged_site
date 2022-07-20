@@ -142,7 +142,7 @@ address{
 
 .content-wrapper{
 	width: 90%;
-	margin: 50px 0px 50px 20px;
+	margin: 50px 0px;
 	
 }
 
@@ -186,6 +186,8 @@ header{
 
 
 header .header-divider{
+	border: .25px solid #FFFFFF;
+	margin: 15px 0px;
 	width: 100%;
 }
 
@@ -194,7 +196,7 @@ header .content-wrapper{
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	margin: 30px 0px;
+	margin: 25px 0px 15px 0px;
 	
 }
 
@@ -307,7 +309,10 @@ aside{
 	flex-flow: row wrap;
 }
 
-
+aside .content-wrapper{
+	margin-top:30px;
+	
+}
 
 input[type=text] {
 	box-sizing: border-box;
@@ -378,7 +383,7 @@ input[type=button]{
 }
 
 .reviews article{
-	width: 90%;
+	width: 100%;
 }
 
 .reviews h2{
@@ -389,6 +394,9 @@ input[type=button]{
 	width:100%;
 }
 
+.reviews .team-building-text h3{
+	width: 50%;
+}
 
 
 /*-----------About page------------*/
@@ -447,7 +455,7 @@ input[type=button]{
 
 .faq-content{
 	color: #ffffff;
-	width: 90%;
+	width: 100%;
 }
 
 .faq p{
@@ -457,7 +465,7 @@ input[type=button]{
 .faq h1{
 	color: #ffffff;
 	margin: 0px;
-	width:60%;
+	width:75%;
 }
 
 .faq-content h4{
@@ -695,9 +703,10 @@ h3{
 		width: 48%
 	}
 	
-	.team-building-text h3{
+	.reviews .team-building-text h3{
 		margin:0px;
 		padding:0px;
+		width: 100%;
 	}
 	
 	
@@ -756,6 +765,11 @@ h3{
 	h1 tags from the content wrapper because I didn't know how
 	to keep it seperate from the content but now I get it. And using space-between
 	or around will create columns*/
+	
+	.contact-section .information,
+	.contact-section .chat{
+		width: 40%
+	}
 	
 	/*======================FAQ PAGE ===================*/
 	
