@@ -250,16 +250,33 @@ footer .contact{
 footer .social{
 
 	text-align: center;
+	margin-top: 50px;
 }
 
 footer .copyright{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 footer p{
 	font-size: 1.125em;
 }
 
+footer .social-icons{
+	display: flex;
+	font-size: 1.25em;
+	justify-content: space-between;
+	text-align:center;
+	
+}
+footer .social-icons p{	
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	background: #527158;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
 
 
 /*---------------mobile homepage styles -----------*/
@@ -775,14 +792,21 @@ h3{
 footer .footer-content{
 	display: flex;
 	justify-content: space-between;
-	width: 80%;
+	width: 90%;
 }
 
 footer .copyright{
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	margin-top:100px;
 }
+	
+footer .social{
+		margin-top: 0px;
+		width: 35%
+	}	
+	
 }
 
 /*==================================SCREEN 1200PX=====================*/
@@ -929,6 +953,12 @@ aside .content-wrapper .signup-text{
 		width:100%;
 	}	
 	
+	
+/*---------footer--------*/
+	
+footer .social{
+		width: 25%
+	}	
 	
 }
 	
