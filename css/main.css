@@ -760,12 +760,6 @@ h3{
 		flex-flow: row wrap;
 		justify-content: space-between;
 	}
-/*because h1 and mission content are there own boxes then 
-	when flex-flow is applied the h1 will go on its own line because 
-	it is its own box and takes up alot of space. Before I was seperating the 
-	h1 tags from the content wrapper because I didn't know how
-	to keep it seperate from the content but now I get it. And using space-between
-	or around will create columns*/
 	
 	.contact-section .information,
 	.contact-section .chat{
